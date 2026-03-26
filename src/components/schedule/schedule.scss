@@ -1,0 +1,33 @@
+.scheduleGroups{
+  display: flex;
+  padding: 3px;
+  margin: 4px;
+}
+.zoneTime {
+  background-color: aqua;
+ 
+}
+
+.scheduleWithTime{
+ display: flex;
+  flex-direction: row;
+}
+
+.teachersSchedule{
+  display: flex;
+  column-gap: 10px;
+}
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 120px repeat(var(--groups-count), minmax(0, 1fr));
+  width: 100%;
+}
+
+// .headline-groups {
+//   display: contents; // 🔥 ВАЖНО
+// }
+
+// .headline-groups .group-cell {
+//   border-bottom: 2px solid #000;
+//   text-align: center;
+// }

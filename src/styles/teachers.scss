@@ -1,0 +1,84 @@
+@use './variables' as vars;
+
+.teacher-header{
+  margin-left: 84px;
+  padding: 1px 3px;
+  display: flex;
+}
+
+.teacherUnitedRows{
+  //  margin-right: 10px;  
+  // margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  position: relative;
+  width: max-content;
+}
+
+.teacherName {
+  text-align: center;
+  margin-bottom: 4px; /* расстояние до колонок */
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  // left: 50%;
+}
+
+.teacherColumn {
+  display: flex;
+  flex-direction: column;
+     width: vars.$pair-width;
+     height: 30px;
+      margin-left: 3px;
+      border: none;
+      // background: blueviolet;
+        // flex-direction: column;
+       border: 5px solid rgb(30, 116, 60);
+}
+
+.teacherPair {
+    width: 100px;
+     height: 70px;
+     border: 1px solid gray;
+     margin-left: 3px;
+}
+
+.firstWeekPair {
+  height: 35px;
+  border-bottom: 1px solid rgba(21, 21, 22, 0.758);
+  // background: yellow;
+}
+
+.secondtWeekPair{
+  height: 35px;
+  // border: 1px solid green;
+  // margin-top: 35px;
+  // background: green;
+}
+
+.blinkPair{
+ height: 35px;
+    //  border: 1px solid gray;
+}
+
+.separatePair{
+   height: 35px;
+  border-bottom: 1px solid black;
+}
+
+.groupStyle {
+  font-size: 10px;
+    font-style: italic;
+      line-height: 10px;
+}
+
+.subjWithGroups {
+  display: flex;
+  padding-left: 25px;
+}
+
+.groupsSlot {
+  padding-left: 8px;
+}

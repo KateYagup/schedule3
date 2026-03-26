@@ -1,0 +1,20 @@
+.teachersDay{
+ display: flex;
+  flex-direction: row;
+}
+
+.teacherContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.teacherColumn {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray;
+}
+
+.teacherEmptyPair {
+  height: 50px;
+  border: 1px solid #eee;
+}

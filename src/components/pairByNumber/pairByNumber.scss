@@ -1,0 +1,62 @@
+.pair-line {
+  display: grid;
+  grid-template-columns: repeat(var(--groups-count), minmax(0, 1fr));
+  gap: 2px;
+  width: 100%;
+}
+
+// .pair-cell {
+//   border: 1px solid #ccc;
+//   padding: 6px 23px;
+//   background: #f9f9f9;
+//   box-sizing: border-box;
+//   text-align: center;
+//   // width: 76px;
+// }
+
+// .pair-cell.empty {
+//   background: transparent;
+//   border: 1px dashed #ddd;
+// }
+
+
+// .pair-line {
+//   // display: grid;
+//   display: flex;
+//   flex-direction: rows;
+//   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+// }
+
+// .pair-line {
+//   display: grid;
+//   grid-template-columns: repeat(var(--groups-count), 1fr);
+//   border-bottom: 1px solid #e5e7eb;
+// }
+
+// Если строго по группам
+// .pair-line {
+//   display: grid;
+//   grid-template-columns: repeat(var(--groups-count), 1fr);
+// }
+
+.pair-cell {
+  min-height: 64px;
+  padding: 6px 23px;
+
+  border-right: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #f8fafc;
+  font-size: 14px;
+  border: 1px solid rgb(185, 166, 166);
+}
+
+.pair-cell.empty {
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+}

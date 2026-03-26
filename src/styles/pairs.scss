@@ -1,0 +1,77 @@
+@use './variables' as vars;
+@use 'sass:math';
+
+.pair {
+  &__lec {
+    background-color: rgb(228, 169, 169);
+  }
+  &__pr {
+    background-color: rgb(178, 228, 178);
+  }
+  &__lab {
+    background-color: rgb(190, 190, 230);
+  }
+}
+.pairCell {
+  width: vars.$pair-width;
+  height: vars.$pair-height;   // лучше height вместо min-height
+  border: 1px solid gray;
+  margin-left: 3px;
+
+  display: flex;
+  flex-direction: column;      // ← ОБЯЗАТЕЛЬНО
+  align-items: stretch;        // ← не центр
+  justify-content: flex-start; // ← не центр
+   line-height: 15px;
+  &__content {
+    line-height: 15px;
+  }
+
+  &__firstWeek {
+    height: math.div(vars.$pair-height, 2);
+     border-bottom: 1px solid rgba(21, 21, 22, 0.758);
+  }
+
+  &__secondWeek {
+    height: math.div(vars.$pair-height, 2);
+  }
+}
+
+.empty-cell {
+  opacity: 0.3;
+  font-size: 20px;
+}
+
+.headUnitedCellsTeachers {
+  display: flex;
+  flex-direction: column;
+     width: vars.$pair-width;
+     height: 30px;
+      margin-left: 3px;
+      border: none;
+      // background: blueviolet;
+        // flex-direction: column;
+      //  border: 5px solid rgb(30, 116, 60);
+}
+
+.coursesHead {
+  margin-left: 70px;
+  // padding: 1px 3px;
+  display: flex;
+  margin-left: 89px;
+}
+
+.groupsHead {
+  // margin-right: 100px;
+  display: flex;
+  // margin: 1px;
+  border: 1px solid gray;
+
+}
+
+.group {
+  margin-right: 3px;  
+  // margin-left: 3px;
+  width: vars.$pair-width;
+    border: 1px solid gray;
+}

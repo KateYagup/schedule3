@@ -1,0 +1,14 @@
+.teachersGroups{
+  display: flex;
+}
+.day-title {
+  width: 100%;
+  font-weight: bold;
+  padding: 8px;
+  background: #f1f5f9;
+}
+
+.day-row {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+}
